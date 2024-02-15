@@ -1,4 +1,5 @@
 import Image from "next/image";
+const basePath = process.env.NODE_ENV === 'production' ? '/dana-landing-page' : '';
 
 export default function Home() {
     return (
@@ -6,7 +7,7 @@ export default function Home() {
             <div className="hero container">
                 <div className="header flex flex-row align-items-end py-5">
                     <Image
-                        src='/dana.svg'
+                        src={`${basePath}/dana.svg`}
                         alt="Dana"
                         width={125}
                         height={46}
@@ -26,7 +27,7 @@ export default function Home() {
                 </h1>
                 <div className="flex flex-row align-items-center gap-2 pb-3">
                     <Image
-                        src='/marker.png'
+                        src={`${basePath}/marker.png`}
                         alt=""
                         width={34}
                         height={36}
@@ -59,7 +60,7 @@ export default function Home() {
                     <div className="flex flex-row justify-content-center gap-8 mt-6">
                         <div className="flex flex-1 flex-column gap-4 align-items-center">
                             <Image
-                                src='/calendar.svg'
+                                src={`${basePath}/calendar.svg`}
                                 alt=""
                                 width={75}
                                 height={75}
@@ -71,7 +72,7 @@ export default function Home() {
                         </div>
                         <div className="flex flex-1 flex-column gap-4 align-items-center">
                             <Image
-                                src='/marker2.svg'
+                                src={`${basePath}/marker2.svg`}
                                 alt=""
                                 width={75}
                                 height={75}
@@ -83,7 +84,7 @@ export default function Home() {
                         </div>
                         <div className="flex flex-1 flex-column gap-4 align-items-center">
                             <Image
-                                src='/tickets.svg'
+                                src={`${basePath}/tickets.svg`}
                                 alt=""
                                 width={75}
                                 height={75}
@@ -102,7 +103,7 @@ export default function Home() {
                         <div className="flex flex-row gap-4">
                             <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5">
                                 <Image
-                                    src="/cinema.png"
+                                    src={`${basePath}/cinema.png`}
                                     alt=""
                                     width={1000}
                                     height={1000}
@@ -113,7 +114,7 @@ export default function Home() {
                             </div>
                             <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5">
                                 <Image
-                                    src="/theatre.png"
+                                    src={`${basePath}/theatre.png`}
                                     alt=""
                                     width={1000}
                                     height={1000}
@@ -124,7 +125,7 @@ export default function Home() {
                             </div>
                             <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5">
                                 <Image
-                                    src="/dance.png"
+                                    src={`${basePath}/dance.png`}
                                     alt=""
                                     width={1000}
                                     height={1000}
@@ -135,7 +136,7 @@ export default function Home() {
                             </div>
                             <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5">
                                 <Image
-                                    src="/concert.png"
+                                    src={`${basePath}/concert.png`}
                                     alt=""
                                     width={1000}
                                     height={1000}
@@ -171,7 +172,7 @@ export default function Home() {
                         <a href="#" className="btn btn-secondary"><span className="underline">J</span>e transmets</a>
                     </div>
                     <Image
-                        src="/mockup.png"
+                        src={`${basePath}/mockup.png`}
                         alt=""
                         width={300}
                         height={300}
@@ -185,7 +186,7 @@ export default function Home() {
                 <div className="flex flex-row justify-content-around gap-8">
                     <div className="flex flex-1 flex-column gap-3">
                         <Image
-                            src='/dana.svg'
+                            src={`${basePath}/dana.svg`}
                             alt="Dana"
                             width={125}
                             height={46}
@@ -202,19 +203,19 @@ export default function Home() {
                     </div>
                     <div className="flex flex-1 justify-content-center align-self-end gap-5">
                         <Image
-                            src='/twitter.png'
+                            src={`${basePath}/twitter.png`}
                             alt="Twitter"
                             width={35}
                             height={35}
                         />
                         <Image
-                            src='/instagram.png'
+                            src={`${basePath}/instagram.png`}
                             alt="Instagram"
                             width={35}
                             height={35}
                         />
                         <Image
-                            src='/facebook.png'
+                            src={`${basePath}/facebook.png`}
                             alt="Facebook"
                             width={35}
                             height={35}

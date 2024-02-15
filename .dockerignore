@@ -1,10 +1,12 @@
 .gitignore
 .dockerignore
 .eslintrc.json
+.yarnrc.yml
 
 node_modules/
 out/
 .next/
+.yarn/
 
 Dockerfile
 docker-compose.yaml
