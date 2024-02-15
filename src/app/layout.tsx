@@ -5,6 +5,7 @@ import "./styles/globals.css";
 import "./styles/link.css";
 import "./styles/text.css";
 import "./styles/button.css";
+import "./styles/color.css";
 
 const poppins = Poppins({
     subsets: ['latin'],

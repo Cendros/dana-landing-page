@@ -1,0 +1,11 @@
+.bg-pink {
+    background-color: var(--dana-pink);
+}
+
+.bg-dana-white {
+    background-color: var(--dana-white);
+}
+
+.text-dana-white {
+    color: var(--dana-white);
+}

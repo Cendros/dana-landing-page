@@ -1,5 +1,6 @@
 :root {
     --dana-pink: #FFD3E6;
+    --dana-pink-darker: #F17BCB;
     --dana-orange: #EC5D39;
     --dana-purple: #331863;
     --dana-purple-darker: #371767;
@@ -19,6 +20,62 @@ html, body {
     padding: 0 15%;
 }
 
+.container-blue {
+    background-color: var(--dana-blue);
+    color: var(--dana-white);
+    padding: .7rem 2rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.4);
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.4);
+}
+
+.container-pink {
+    background-color: var(--dana-pink-darker);
+    color: var(--dana-white);
+    padding: .7rem 2rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.4);
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.4);
+}
+
+.container-orange {
+    background-color: var(--dana-orange);
+    color: var(--dana-white);
+    padding: .7rem 2rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.4);
+    box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.4);
+}
+
 .hero {
     background-color: var(--dana-pink);
+}
+
+.banner {
+    background-color: var(--dana-purple);
+    color: var(--dana-white);
+    padding: 3rem 0;
+}
+
+.footer {
+    background-color: var(--dana-pink);
+}
+
+.big-border-top-left {
+    border-top-left-radius: 22rem;
+}
+
+.translate-50 {
+    transform: translate(-50%, -50%);
+}
+
+input {
+    border: 3px solid #00000000;
+    -webkit-transition: .6s ease-in-out;
+    transition: .6s ease-in-out;
+
+    &:focus {
+        outline: none;
+        border: 3px solid var(--dana-purple);
+    }
 }
