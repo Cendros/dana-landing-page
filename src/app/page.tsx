@@ -10,7 +10,7 @@ export default function Home() {
                         alt="Dana"
                         width={125}
                         height={46}
-                        className="mr-8"
+                        className="mr-8 h-auto"
                     />
                     <nav className="flex flex-row gap-6">
                         <a href="#" className="link link-primary text-lg">Offres</a>
@@ -189,7 +189,7 @@ export default function Home() {
                             alt="Dana"
                             width={125}
                             height={46}
-                            className="mr-8"
+                            className="h-auto"
                         />
                         <p className="text-primary text-lg">Découvrez la vie culturelle locale grâce à votre CSE d&apos;entreprise</p>
                     </div>
