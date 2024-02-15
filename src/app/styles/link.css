@@ -1,0 +1,11 @@
+a {
+    text-decoration: none;
+}
+
+.link {
+    font-weight: 600;
+}
+
+.link-primary {
+    color: var(--dana-orange);
+}

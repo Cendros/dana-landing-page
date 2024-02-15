@@ -1,95 +1,42 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+    return (
+        <main>
+            <div className="hero container">
+                <div className="header flex flex-row align-items-end py-5">
+                    <Image
+                        src='/dana.svg'
+                        alt="Dana"
+                        width={125}
+                        height={46}
+                        className="mr-8"
+                    />
+                    <nav className="flex flex-row gap-6">
+                        <a href="#" className="link link-primary text-lg">Offres</a>
+                        <a href="#" className="link link-primary text-lg">Fonctionnalités</a>
+                        <a href="#" className="link link-primary text-lg">Sorties</a>
+                        <a href="#" className="link link-primary text-lg">Pour les pros</a>
+                    </nav>
+                </div>
+                <h1 className="text-primary font-italic font-light my-3">
+                    Découvrez la vie <strong className="font-semibold">CULTURELLE</strong><br />
+                    locale grâce à votre<br />
+                    <strong className="font-semibold">CSE</strong> d&apos;entreprise !
+                </h1>
+                <div className="flex flex-row align-items-center gap-2 pb-3">
+                    <Image
+                        src='/marker.png'
+                        alt=""
+                        width={34}
+                        height={36}
+                    />
+                    <span className="font-italic text-blue font-medium text-lg">Caen la mer</span>
+                </div>
+                <a href="#" className="btn btn-primary">
+                    <span>Contactez-nous</span>
+                </a>
+            </div>
+        </main>
+    );
 }

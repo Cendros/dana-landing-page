@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    padding: .9rem 4rem;
+    margin: 2rem 0;
+    color: var(--dana-white);
+    font-family: var(--font-inter);
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    border-radius: 100rem;
+    font-size: 1.125rem;
+
+    &.btn-primary {
+        background-color: var(--dana-orange);
+    }
+
+    &.btn-secondary {
+        background-color: var(--dana-purple);
+    }
+}

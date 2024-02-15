@@ -1,0 +1,24 @@
+:root {
+    --dana-pink: #FFD3E6;
+    --dana-orange: #EC5D39;
+    --dana-purple: #331863;
+    --dana-purple-darker: #371767;
+    --dana-blue: #3981EA;
+    --primary-color: #371767;
+    --dana-white: #FBF7EE;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: var(--font-poppins);
+}
+
+.container {
+    padding: 0 15%;
+}
+
+.hero {
+    background-color: var(--dana-pink);
+}
