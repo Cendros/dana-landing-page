@@ -6,7 +6,7 @@ export default function Home() {
             <div className="hero container">
                 <div className="header flex flex-row align-items-end py-5">
                     <Image
-                        src="/dana.svg"
+                        src="/dana.png"
                         alt="Dana"
                         width={125}
                         height={46}
@@ -59,7 +59,7 @@ export default function Home() {
                     <div className="flex flex-row justify-content-center gap-8 mt-6">
                         <div className="flex flex-1 flex-column gap-4 align-items-center">
                             <Image
-                                src="/calendar.svg"
+                                src="/calendar.png"
                                 alt=""
                                 width={75}
                                 height={75}
@@ -71,7 +71,7 @@ export default function Home() {
                         </div>
                         <div className="flex flex-1 flex-column gap-4 align-items-center">
                             <Image
-                                src="/marker2.svg"
+                                src="/marker2.png"
                                 alt=""
                                 width={75}
                                 height={75}
@@ -83,7 +83,7 @@ export default function Home() {
                         </div>
                         <div className="flex flex-1 flex-column gap-4 align-items-center">
                             <Image
-                                src="/tickets.svg"
+                                src="/tickets.png"
                                 alt=""
                                 width={75}
                                 height={75}
@@ -104,8 +104,8 @@ export default function Home() {
                                 <Image
                                     src="/cinema.png"
                                     alt=""
-                                    width={1000}
-                                    height={1000}
+                                    width={500}
+                                    height={500}
                                     className="w-full h-auto"
                                     objectFit="cover"
                                 />
@@ -115,8 +115,8 @@ export default function Home() {
                                 <Image
                                     src="/theatre.png"
                                     alt=""
-                                    width={1000}
-                                    height={1000}
+                                    width={500}
+                                    height={500}
                                     className="w-full h-auto"
                                     objectFit="cover"
                                 />
@@ -126,8 +126,8 @@ export default function Home() {
                                 <Image
                                     src="/dance.png"
                                     alt=""
-                                    width={1000}
-                                    height={1000}
+                                    width={500}
+                                    height={500}
                                     className="w-full h-auto"
                                     objectFit="cover"
                                 />
@@ -137,8 +137,8 @@ export default function Home() {
                                 <Image
                                     src="/concert.png"
                                     alt=""
-                                    width={1000}
-                                    height={1000}
+                                    width={500}
+                                    height={500}
                                     className="w-full h-auto"
                                     objectFit="cover"
                                 />
@@ -185,7 +185,7 @@ export default function Home() {
                 <div className="flex flex-row justify-content-around gap-8">
                     <div className="flex flex-1 flex-column gap-3">
                         <Image
-                            src="/dana.svg"
+                            src="/dana.png"
                             alt="Dana"
                             width={125}
                             height={46}
