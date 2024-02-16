@@ -1,6 +1,18 @@
+'use client'
+
+import Aos from "aos";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Home() {
+    useEffect(() => {
+        Aos.init({
+            disable: 'mobile',
+            mirror: true,
+            duration: 1000
+        });
+    }, []);
+
     return (
         <main>
             <div className="hero container">
@@ -19,12 +31,12 @@ export default function Home() {
                         <a href="#" className="link link-primary text-lg">Pour les pros</a>
                     </nav>
                 </div>
-                <h1 className="text-primary font-italic font-light my-3">
+                <h1 className="text-primary font-italic font-light my-3" data-aos="fade-right">
                     Découvrez la vie <strong className="font-semibold">CULTURELLE</strong><br />
                     locale grâce à votre<br />
                     <strong className="font-semibold">CSE</strong> d&apos;entreprise !
                 </h1>
-                <div className="flex flex-row align-items-center gap-2 pb-3">
+                <div className="flex flex-row align-items-center gap-2 pb-3" data-aos="fade-right" data-aos-delay="100">
                     <Image
                         src="/marker.png"
                         alt=""
@@ -33,11 +45,11 @@ export default function Home() {
                     />
                     <span className="font-italic text-blue font-medium text-lg">Caen la mer</span>
                 </div>
-                <a href="#" className="btn btn-primary">Contactez-nous</a>
+                <a href="#" className="btn btn-primary" data-aos="zoom-in" data-aos-delay="300">Contactez-nous</a>
             </div>
 
             <div className="bg-pink">
-                <div className="bg-dana-white big-border-top-left py-5 container">
+                <div className="bg-dana-white big-border-top-left py-5 container" data-aos="fade-up" data-aos-delay="400">
                     <div className="pt-8">
                         <h2 className="text-primary font-italic font-light">
                             Offrez à vos employés<br />
@@ -50,14 +62,14 @@ export default function Home() {
                     <div className="py-7"></div>
 
                     <div className="pb-5">
-                        <h2 className="text-primary font-italic font-light">
+                        <h2 className="text-primary font-italic font-light" data-aos="fade-right">
                             Tout réunir en un seul endroit
                         </h2>
-                        <p className="text-primary text-lg font-light m-0">Toutes les sorties culturelles près de chez vous sont disponibles sur l&apos;application Dana ! Vous pouvez obtenir des informations sur la salle, l&apos;événement, acheter votre billet et consulter les détails de ce dernier.</p>
+                        <p className="text-primary text-lg font-light m-0" data-aos="fade-right" data-aos-delay="200">Toutes les sorties culturelles près de chez vous sont disponibles sur l&apos;application Dana ! Vous pouvez obtenir des informations sur la salle, l&apos;événement, acheter votre billet et consulter les détails de ce dernier.</p>
                     </div>
 
                     <div className="flex flex-row justify-content-center gap-8 mt-6">
-                        <div className="flex flex-1 flex-column gap-4 align-items-center">
+                        <div className="flex flex-1 flex-column gap-4 align-items-center" data-aos="zoom-in" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
                             <Image
                                 src="/calendar.png"
                                 alt=""
@@ -69,7 +81,7 @@ export default function Home() {
                                 <p className="font-light text-sm">Un seul endroit pour retrouver toutes les sorties culturelles dans l&apos;agglomération caennaise  grâce à un agenda.</p>
                             </div>
                         </div>
-                        <div className="flex flex-1 flex-column gap-4 align-items-center">
+                        <div className="flex flex-1 flex-column gap-4 align-items-center" data-aos="zoom-in" data-aos-delay="400" data-aos-anchor-placement="center-bottom">
                             <Image
                                 src="/marker2.png"
                                 alt=""
@@ -81,7 +93,7 @@ export default function Home() {
                                 <p className="font-light text-sm">Retrouvez les salles à proximité. Vous pouvez accéder à leurs informations pratiques : accessibilité, transports et parking.</p>
                             </div>
                         </div>
-                        <div className="flex flex-1 flex-column gap-4 align-items-center">
+                        <div className="flex flex-1 flex-column gap-4 align-items-center" data-aos="zoom-in" data-aos-delay="600" data-aos-anchor-placement="center-bottom">
                             <Image
                                 src="/tickets.png"
                                 alt=""
@@ -98,9 +110,9 @@ export default function Home() {
                     <div className="py-7"></div>
                     
                     <div>
-                        <h2 className="text-primary font-italic font-light">Découvrez notre sélection d&apos;événements</h2>
+                        <h2 className="text-primary font-italic font-light" data-aos="fade-right">Découvrez notre sélection d&apos;événements</h2>
                         <div className="flex flex-row gap-4">
-                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5">
+                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5" data-aos="flip-up" data-aos-delay="200">
                                 <Image
                                     src="/cinema.png"
                                     alt=""
@@ -111,7 +123,7 @@ export default function Home() {
                                 />
                                 <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Cinéma</span>
                             </div>
-                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5">
+                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5" data-aos="flip-up" data-aos-delay="400">
                                 <Image
                                     src="/theatre.png"
                                     alt=""
@@ -122,7 +134,7 @@ export default function Home() {
                                 />
                                 <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Théâtre</span>
                             </div>
-                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5">
+                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5" data-aos="flip-up" data-aos-delay="600">
                                 <Image
                                     src="/dance.png"
                                     alt=""
@@ -133,7 +145,7 @@ export default function Home() {
                                 />
                                 <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Danse</span>
                             </div>
-                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5">
+                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5" data-aos="flip-up" data-aos-delay="800">
                                 <Image
                                     src="/concert.png"
                                     alt=""
@@ -151,24 +163,24 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="banner">
+            <div className="banner" data-aos="fade-up">
                 <div className="container">
-                    <h2 className="font-italic font-light">
+                    <h2 className="font-italic font-light" data-aos="fade-right">
                         Je suis une <strong className="font-semibold">STRUCTURE</strong> culturelle
                     </h2>
-                    <p className="text-lg font-light">En tant que structure culturelle, vous pouvez maintenant proposer vos billets sur notre plateforme. Offrez des expériences uniques à un public diversifié, tout en bénéficiant de la visibilité auprès des employés des entreprises adhérentes. Rejoignez notre réseau dès aujourd&apos;hui et participez à rendre la culture plus accessible pour tous !</p>
-                    <a href="#" className="btn btn-primary"><span className="underline">C</span>ontactez-nous</a>
+                    <p className="text-lg font-light" data-aos="fade-right" data-aos-delay="200">En tant que structure culturelle, vous pouvez maintenant proposer vos billets sur notre plateforme. Offrez des expériences uniques à un public diversifié, tout en bénéficiant de la visibilité auprès des employés des entreprises adhérentes. Rejoignez notre réseau dès aujourd&apos;hui et participez à rendre la culture plus accessible pour tous !</p>
+                    <a href="#" className="btn btn-primary" data-aos="zoom-in"><span className="underline">C</span>ontactez-nous</a>
                 </div>
             </div>
 
             <div className="container bg-dana-white py-2">
                 <div className="flex flex-row align-items-center gap-8">
                     <div className="flex flex-column">
-                        <h2 className="text-primary font-italic font-light">
+                        <h2 className="text-primary font-italic font-light" data-aos="fade-right">
                             Restons en <strong className="font-semibold">CONTACT</strong>
                         </h2>
-                        <input type="email" placeholder="Votre e-mail" className="btn text-primary" />
-                        <a href="#" className="btn btn-secondary"><span className="underline">J</span>e transmets</a>
+                        <input type="email" placeholder="Votre e-mail" className="btn text-primary" data-aos="zoom-in" />
+                        <a href="#" className="btn btn-secondary" data-aos="zoom-in"><span className="underline">J</span>e transmets</a>
                     </div>
                     <Image
                         src="/mockup.png"
@@ -177,6 +189,9 @@ export default function Home() {
                         height={300}
                         objectFit="contain"
                         className="w-5 h-auto"
+                        data-aos="flip-left"
+                        data-aos-anchor-placement="center-bottom"
+                        data-aos-delay="500"
                     />
                 </div>
             </div>

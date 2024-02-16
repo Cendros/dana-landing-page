@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from 'next/font/google';
+
 import "primeflex/primeflex.min.css";
 import "./styles/globals.css";
 import "./styles/link.css";
 import "./styles/text.css";
 import "./styles/button.css";
 import "./styles/color.css";
+import 'aos/dist/aos.css';
 
 const poppins = Poppins({
     subsets: ['latin'],
