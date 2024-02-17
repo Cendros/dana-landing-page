@@ -9,7 +9,7 @@ export default function Home() {
         Aos.init({
             disable: 'mobile',
             mirror: true,
-            duration: 1000
+            duration: 1000,
         });
     }, []);
 
@@ -119,7 +119,6 @@ export default function Home() {
                                     width={500}
                                     height={500}
                                     className="w-full h-auto"
-                                    objectFit="cover"
                                 />
                                 <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Cinéma</span>
                             </div>
@@ -130,7 +129,6 @@ export default function Home() {
                                     width={500}
                                     height={500}
                                     className="w-full h-auto"
-                                    objectFit="cover"
                                 />
                                 <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Théâtre</span>
                             </div>
@@ -141,7 +139,6 @@ export default function Home() {
                                     width={500}
                                     height={500}
                                     className="w-full h-auto"
-                                    objectFit="cover"
                                 />
                                 <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Danse</span>
                             </div>
@@ -152,7 +149,6 @@ export default function Home() {
                                     width={500}
                                     height={500}
                                     className="w-full h-auto"
-                                    objectFit="cover"
                                 />
                                 <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Concerts</span>
                             </div>
@@ -173,26 +169,27 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="container bg-dana-white py-2">
-                <div className="flex flex-row align-items-center gap-8">
-                    <div className="flex flex-column">
+            <div className="container bg-dana-white py-2 mockup-container">
+                <div className="flex flex-row justify-content-center align-items-center gap-8 h-full">
+                    <div className="flex flex-1 flex-column">
                         <h2 className="text-primary font-italic font-light" data-aos="fade-right">
                             Restons en <strong className="font-semibold">CONTACT</strong>
                         </h2>
                         <input type="email" placeholder="Votre e-mail" className="btn text-primary" data-aos="zoom-in" />
                         <a href="#" className="btn btn-secondary" data-aos="zoom-in"><span className="underline">J</span>e transmets</a>
                     </div>
-                    <Image
-                        src="/mockup.png"
-                        alt=""
-                        width={300}
-                        height={300}
-                        objectFit="contain"
-                        className="w-5 h-auto"
-                        data-aos="flip-left"
-                        data-aos-anchor-placement="center-bottom"
-                        data-aos-delay="500"
-                    />
+                    <div className="flex flex-1 h-full">
+                        <Image
+                            src="/mockup.png"
+                            alt=""
+                            width={875}
+                            height={1795}
+                            className="w-full h-auto fit-contain"
+                            data-aos="flip-left"
+                            data-aos-anchor-placement="center-bottom"
+                            data-aos-delay="500"
+                        />
+                    </div>
                 </div>
             </div>
 
