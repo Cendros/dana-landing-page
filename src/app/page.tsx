@@ -185,14 +185,14 @@ export default function Home() {
 
             <div className="container bg-dana-white py-2 mockup-container">
                 <div className="flex flex-column md:flex-row justify-content-center align-items-center gap-3 md:gap-8 w-full h-auto md:h-full">
-                    <div className="flex w-6 md-w:12 flex-column w-full">
+                    <div className="flex w-12 md:w-6 flex-column w-full">
                         <h2 className="text-primary font-italic font-light" data-aos="fade-right">
                             Restons en <strong className="font-semibold">CONTACT</strong>
                         </h2>
                         <input type="email" placeholder="Votre e-mail" className="btn text-primary" data-aos="zoom-in" />
                         <a href="#" className="btn btn-secondary" data-aos="zoom-in"><span className="underline">J</span>e transmets</a>
                     </div>
-                    <div className="flex w-5 md:w-12 h-full">
+                    <div className="flex w-12 md:w-5 h-full">
                         <Image
                             src="/mockup.png"
                             alt=""
