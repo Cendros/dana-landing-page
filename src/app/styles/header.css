@@ -45,10 +45,12 @@
 
             &:before {
                 top: -10px;
+                position: relative;
             }
 
             &::after {
                 bottom: -10px;
+                position: relative;
             }
         }
 

@@ -31,6 +31,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
+            <head>
+                <link rel="icon" href="/favicon.ico" sizes="any" />
+            </head>
             <body>{children}</body>
         </html>
     );
