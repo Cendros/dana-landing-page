@@ -10,7 +10,6 @@ export default function Home() {
     useEffect(() => {
         Aos.init({
             disable: 'phone',
-            mirror: true,
             duration: 1000,
         });
     }, []);
