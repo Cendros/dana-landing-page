@@ -33,8 +33,6 @@
             transition: .5s ease-in-out;
 
             &::before, &::after {
-                -webkit-transition: .5s ease-in-out;
-                transition: .5s ease-in-out;
                 content: "";
                 position: absolute;
                 display: block;
@@ -46,11 +44,15 @@
             &::before {
                 top: -10px;
                 position: relative;
+                -webkit-transition: .5s ease-in-out;
+                transition: .5s ease-in-out;
             }
 
             &::after {
                 bottom: -10px;
                 position: relative;
+                -webkit-transition: .5s ease-in-out;
+                transition: .5s ease-in-out;
             }
         }
 
