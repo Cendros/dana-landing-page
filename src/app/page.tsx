@@ -16,21 +16,27 @@ export default function Home() {
     return (
         <main>
             <div className="hero container">
-                <div className="header flex flex-row align-items-end py-5">
+                <nav className="header flex flex-row align-items-end py-5">
                     <Image
                         src="/dana.png"
                         alt="Dana"
                         width={125}
                         height={46}
-                        className="mr-8 h-auto"
+                        className="mr-2 xl:mr-8 h-auto"
                     />
-                    <nav className="flex flex-row gap-6">
-                        <a href="#" className="link link-primary text-lg">Offres</a>
-                        <a href="#" className="link link-primary text-lg">Fonctionnalités</a>
-                        <a href="#" className="link link-primary text-lg">Sorties</a>
-                        <a href="#" className="link link-primary text-lg">Pour les pros</a>
-                    </nav>
-                </div>
+                    <label>
+                        <input type="checkbox" />
+                        <span className="menu">
+                            <span className="burger"></span>
+                        </span>
+                        <ul className="flex flex-column lg:flex-row gap-6 m-0">
+                            <li><a href="#" className="link link-primary text-lg">Offres</a></li>
+                            <li><a href="#" className="link link-primary text-lg">Fonctionnalités</a></li>
+                            <li><a href="#" className="link link-primary text-lg">Sorties</a></li>
+                            <li><a href="#" className="link link-primary text-lg">Pour les pros</a></li>
+                        </ul>
+                    </label>
+                </nav>
                 <h1 className="text-primary font-italic font-light my-3" data-aos="fade-right">
                     Découvrez la vie <strong className="font-semibold">CULTURELLE</strong><br />
                     locale grâce à votre<br />
