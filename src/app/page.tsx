@@ -2,9 +2,11 @@
 
 import Aos from "aos";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+    const checkboxMenu = useRef<HTMLInputElement>(null);
+
     useEffect(() => {
         Aos.init({
             disable: 'phone',
@@ -12,6 +14,10 @@ export default function Home() {
             duration: 1000,
         });
     }, []);
+
+    const closeMenu = () => {
+        checkboxMenu.current!.checked = false;
+    }
 
     return (
         <main>
@@ -25,15 +31,15 @@ export default function Home() {
                         className="mr-2 xl:mr-8 h-auto"
                     />
                     <label>
-                        <input type="checkbox" />
+                        <input type="checkbox" ref={checkboxMenu} />
                         <span className="menu">
                             <span className="burger"></span>
                         </span>
                         <ul className="flex flex-column lg:flex-row gap-6 m-0">
-                            <li><a href="#offers" className="link link-primary text-lg">Offres</a></li>
-                            <li><a href="#features" className="link link-primary text-lg">Fonctionnalités</a></li>
-                            <li><a href="#events" className="link link-primary text-lg">Sorties</a></li>
-                            <li><a href="#pros" className="link link-primary text-lg">Pour les pros</a></li>
+                            <li><a href="#offres" className="link link-primary text-lg" onClick={closeMenu}>Offres</a></li>
+                            <li><a href="#fonctionnalites" className="link link-primary text-lg" onClick={closeMenu}>Fonctionnalités</a></li>
+                            <li><a href="#sorties" className="link link-primary text-lg" onClick={closeMenu}>Sorties</a></li>
+                            <li><a href="#pros" className="link link-primary text-lg" onClick={closeMenu}>Pour les pros</a></li>
                         </ul>
                     </label>
                 </nav>
@@ -55,7 +61,7 @@ export default function Home() {
             </div>
 
             <div className="bg-pink">
-                <div id="offers" className="bg-dana-white big-border-top-left py-5 container" data-aos="fade-up" data-aos-delay="400">
+                <div id="offres" className="bg-dana-white big-border-top-left py-5 container" data-aos="fade-up" data-aos-delay="400">
                     <div className="pt-0 md:pt-8">
                         <h2 className="text-primary font-italic font-light">
                             Offrez à vos employés<br />
@@ -67,7 +73,7 @@ export default function Home() {
 
                     <div className="py-3 md:py-7"></div>
 
-                    <div id="features" className="pb-5">
+                    <div id="fonctionnalites" className="pb-5">
                         <h2 className="text-primary font-italic font-light" data-aos="fade-right">
                             Tout réunir en un seul endroit
                         </h2>
@@ -115,7 +121,7 @@ export default function Home() {
 
                     <div className="py-3 md:py-7"></div>
                     
-                    <div id="events">
+                    <div id="sorties">
                         <h2 className="text-primary font-italic font-light" data-aos="fade-right">Découvrez notre sélection d&apos;événements</h2>
                         <div className="flex flex-row flex-wrap">
                             <div className="flex w-6 lg:w-3">
