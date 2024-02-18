@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from 'next/font/google';
+import { FaChevronUp } from "react-icons/fa";
 
 import "primeflex/primeflex.min.css";
 import "./styles/globals.css";
@@ -9,6 +10,7 @@ import "./styles/text.css";
 import "./styles/button.css";
 import "./styles/color.css";
 import 'aos/dist/aos.css';
+import ScrollToTop from "./components/ScrollToTop";
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -34,7 +36,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <head>
                 <link rel="icon" href="/dana-landing-page/favicon.ico" sizes="any" />
             </head>
-            <body>{children}</body>
+            <body>
+                <ScrollToTop />
+                {children}
+            </body>
         </html>
     );
 }

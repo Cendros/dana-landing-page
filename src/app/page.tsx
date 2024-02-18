@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Aos from "aos";
 import Image from "next/image";
@@ -30,10 +30,10 @@ export default function Home() {
                             <span className="burger"></span>
                         </span>
                         <ul className="flex flex-column lg:flex-row gap-6 m-0">
-                            <li><a href="#" className="link link-primary text-lg">Offres</a></li>
-                            <li><a href="#" className="link link-primary text-lg">Fonctionnalités</a></li>
-                            <li><a href="#" className="link link-primary text-lg">Sorties</a></li>
-                            <li><a href="#" className="link link-primary text-lg">Pour les pros</a></li>
+                            <li><a href="#offers" className="link link-primary text-lg">Offres</a></li>
+                            <li><a href="#features" className="link link-primary text-lg">Fonctionnalités</a></li>
+                            <li><a href="#events" className="link link-primary text-lg">Sorties</a></li>
+                            <li><a href="#pros" className="link link-primary text-lg">Pour les pros</a></li>
                         </ul>
                     </label>
                 </nav>
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
 
             <div className="bg-pink">
-                <div className="bg-dana-white big-border-top-left py-5 container" data-aos="fade-up" data-aos-delay="400">
+                <div id="offers" className="bg-dana-white big-border-top-left py-5 container" data-aos="fade-up" data-aos-delay="400">
                     <div className="pt-0 md:pt-8">
                         <h2 className="text-primary font-italic font-light">
                             Offrez à vos employés<br />
@@ -67,7 +67,7 @@ export default function Home() {
 
                     <div className="py-3 md:py-7"></div>
 
-                    <div className="pb-5">
+                    <div id="features" className="pb-5">
                         <h2 className="text-primary font-italic font-light" data-aos="fade-right">
                             Tout réunir en un seul endroit
                         </h2>
@@ -115,7 +115,7 @@ export default function Home() {
 
                     <div className="py-3 md:py-7"></div>
                     
-                    <div>
+                    <div id="events">
                         <h2 className="text-primary font-italic font-light" data-aos="fade-right">Découvrez notre sélection d&apos;événements</h2>
                         <div className="flex flex-row flex-wrap">
                             <div className="flex w-6 lg:w-3">
@@ -173,7 +173,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="banner" data-aos="fade-up">
+            <div id="pros" className="banner" data-aos="fade-up">
                 <div className="container flex md:block flex-column justify-content-center">
                     <h2 className="font-italic font-light" data-aos="fade-right">
                         Je suis une <strong className="font-semibold">STRUCTURE</strong> culturelle
