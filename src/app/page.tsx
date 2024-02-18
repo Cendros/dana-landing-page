@@ -125,51 +125,51 @@ export default function Home() {
                         <h2 className="text-primary font-italic font-light" data-aos="fade-right">Découvrez notre sélection d&apos;événements</h2>
                         <div className="flex flex-row flex-wrap">
                             <div className="flex w-6 lg:w-3">
-                                <div className="p-3 flex justify-content-center align-items-center relative border-round-3xl overflow-hidden" data-aos="flip-up" data-aos-delay="200">
+                                <div className="p-1 lg:p-3 flex justify-content-center align-items-center relative overflow-hidden" data-aos="flip-up" data-aos-delay="200">
                                     <Image
-                                        src="/cinema.png"
+                                        src="/cinema.jpg"
                                         alt=""
                                         width={500}
                                         height={500}
-                                        className="w-full h-auto shadow-5"
+                                        className="w-full h-auto shadow-5 border-round-3xl"
                                     />
-                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Cinéma</span>
+                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50 text-highlight">Cinéma</span>
                                 </div>
                             </div>
                             <div className="flex w-6 lg:w-3">
-                                <div className="p-3 flex justify-content-center align-items-center relative border-round-3xl overflow-hidden" data-aos="flip-up" data-aos-delay="400">
+                                <div className="p-1 lg:p-3 flex justify-content-center align-items-center relative overflow-hidden" data-aos="flip-up" data-aos-delay="400">
                                     <Image
-                                        src="/theatre.png"
+                                        src="/theatre.jpg"
                                         alt=""
                                         width={500}
                                         height={500}
-                                        className="w-full h-auto shadow-5"
+                                        className="w-full h-auto shadow-5 border-round-3xl"
                                     />
-                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Théâtre</span>
+                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50 text-highlight">Théâtre</span>
                                 </div>
                             </div>
                             <div className="flex w-6 lg:w-3">
-                                <div className="p-3 flex justify-content-center align-items-center relative border-round-3xl overflow-hidden" data-aos="flip-up" data-aos-delay="600">
+                                <div className="p-1 lg:p-3 flex justify-content-center align-items-center relative overflow-hidden" data-aos="flip-up" data-aos-delay="600">
                                     <Image
-                                        src="/dance.png"
+                                        src="/dance.jpg"
                                         alt=""
                                         width={500}
                                         height={500}
-                                        className="w-full h-auto shadow-5"
+                                        className="w-full h-auto shadow-5 border-round-3xl"
                                     />
-                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Danse</span>
+                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50 text-highlight">Danse</span>
                                 </div>
                             </div>
                             <div className="flex w-6 lg:w-3">
-                                <div className="p-3 flex justify-content-center align-items-center relative border-round-3xl overflow-hidden" data-aos="flip-up" data-aos-delay="800">
+                                <div className="p-1 lg:p-3 flex justify-content-center align-items-center relative overflow-hidden" data-aos="flip-up" data-aos-delay="800">
                                     <Image
-                                        src="/concert.png"
+                                        src="/concert.jpg"
                                         alt=""
                                         width={500}
                                         height={500}
-                                        className="w-full h-auto shadow-5"
+                                        className="w-full h-auto shadow-5 border-round-3xl"
                                     />
-                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Concerts</span>
+                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50 text-highlight">Concerts</span>
                                 </div>
                             </div>
                         </div>

@@ -11,3 +11,8 @@ h1, h2 {
 p {
     text-align: justify;
 }
+
+.text-highlight {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
