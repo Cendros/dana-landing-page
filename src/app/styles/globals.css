@@ -21,7 +21,11 @@ html, body {
 }
 
 .container {
-    padding: 0 15%;
+    padding: 0 5%;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 15%;
+    }
 }
 
 .container-blue {
@@ -58,7 +62,11 @@ html, body {
 .banner {
     background-color: var(--dana-purple);
     color: var(--dana-white);
-    padding: 3rem 0;
+    padding: 1rem 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 3rem 0;
+    }
 }
 
 .footer {
@@ -66,7 +74,11 @@ html, body {
 }
 
 .big-border-top-left {
-    border-top-left-radius: 22rem;
+    border-top-left-radius: 0;
+
+    @media screen and (min-width: 768px) {
+        border-top-left-radius: 22rem;
+    }
 }
 
 .translate-50 {
@@ -85,7 +97,11 @@ input {
 }
 
 .mockup-container {
-    height: 100vh;
+    height: auto;
+
+    @media screen and (min-width: 768px) {
+        height: 100vh;
+    }
 }
 
 .fit-contain {

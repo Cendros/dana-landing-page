@@ -7,7 +7,7 @@ import { useEffect } from "react";
 export default function Home() {
     useEffect(() => {
         Aos.init({
-            disable: 'mobile',
+            disable: 'phone',
             mirror: true,
             duration: 1000,
         });
@@ -56,7 +56,7 @@ export default function Home() {
 
             <div className="bg-pink">
                 <div className="bg-dana-white big-border-top-left py-5 container" data-aos="fade-up" data-aos-delay="400">
-                    <div className="pt-8">
+                    <div className="pt-0 md:pt-8">
                         <h2 className="text-primary font-italic font-light">
                             Offrez à vos employés<br />
                             des moments culturels <strong className="font-semibold">INOUBLIABLES</strong>
@@ -65,7 +65,7 @@ export default function Home() {
                         <a href="#" className="btn btn-secondary"><span className="underline">C</span>ontactez-nous</a>
                     </div>
 
-                    <div className="py-7"></div>
+                    <div className="py-3 md:py-7"></div>
 
                     <div className="pb-5">
                         <h2 className="text-primary font-italic font-light" data-aos="fade-right">
@@ -74,7 +74,7 @@ export default function Home() {
                         <p className="text-primary text-lg font-light m-0" data-aos="fade-right" data-aos-delay="200">Toutes les sorties culturelles près de chez vous sont disponibles sur l&apos;application Dana ! Vous pouvez obtenir des informations sur la salle, l&apos;événement, acheter votre billet et consulter les détails de ce dernier.</p>
                     </div>
 
-                    <div className="flex flex-row justify-content-center gap-8 mt-6">
+                    <div className="flex flex-column lg:flex-row justify-content-center gap-5 lg:gap-8 mt-3 md:mt-6">
                         <div className="flex flex-1 flex-column gap-4 align-items-center" data-aos="zoom-in" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
                             <Image
                                 src="/calendar.png"
@@ -113,60 +113,68 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="py-7"></div>
+                    <div className="py-3 md:py-7"></div>
                     
                     <div>
                         <h2 className="text-primary font-italic font-light" data-aos="fade-right">Découvrez notre sélection d&apos;événements</h2>
-                        <div className="flex flex-row gap-4">
-                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5" data-aos="flip-up" data-aos-delay="200">
-                                <Image
-                                    src="/cinema.png"
-                                    alt=""
-                                    width={500}
-                                    height={500}
-                                    className="w-full h-auto"
-                                />
-                                <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Cinéma</span>
+                        <div className="flex flex-row flex-wrap">
+                            <div className="flex w-6 lg:w-3">
+                                <div className="p-3 flex justify-content-center align-items-center relative border-round-3xl overflow-hidden" data-aos="flip-up" data-aos-delay="200">
+                                    <Image
+                                        src="/cinema.png"
+                                        alt=""
+                                        width={500}
+                                        height={500}
+                                        className="w-full h-auto shadow-5"
+                                    />
+                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Cinéma</span>
+                                </div>
                             </div>
-                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5" data-aos="flip-up" data-aos-delay="400">
-                                <Image
-                                    src="/theatre.png"
-                                    alt=""
-                                    width={500}
-                                    height={500}
-                                    className="w-full h-auto"
-                                />
-                                <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Théâtre</span>
+                            <div className="flex w-6 lg:w-3">
+                                <div className="p-3 flex justify-content-center align-items-center relative border-round-3xl overflow-hidden" data-aos="flip-up" data-aos-delay="400">
+                                    <Image
+                                        src="/theatre.png"
+                                        alt=""
+                                        width={500}
+                                        height={500}
+                                        className="w-full h-auto shadow-5"
+                                    />
+                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Théâtre</span>
+                                </div>
                             </div>
-                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5" data-aos="flip-up" data-aos-delay="600">
-                                <Image
-                                    src="/dance.png"
-                                    alt=""
-                                    width={500}
-                                    height={500}
-                                    className="w-full h-auto"
-                                />
-                                <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Danse</span>
+                            <div className="flex w-6 lg:w-3">
+                                <div className="p-3 flex justify-content-center align-items-center relative border-round-3xl overflow-hidden" data-aos="flip-up" data-aos-delay="600">
+                                    <Image
+                                        src="/dance.png"
+                                        alt=""
+                                        width={500}
+                                        height={500}
+                                        className="w-full h-auto shadow-5"
+                                    />
+                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Danse</span>
+                                </div>
                             </div>
-                            <div className="flex flex-1 justify-content-center align-items-center relative border-round-3xl overflow-hidden shadow-5" data-aos="flip-up" data-aos-delay="800">
-                                <Image
-                                    src="/concert.png"
-                                    alt=""
-                                    width={500}
-                                    height={500}
-                                    className="w-full h-auto"
-                                />
-                                <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Concerts</span>
+                            <div className="flex w-6 lg:w-3">
+                                <div className="p-3 flex justify-content-center align-items-center relative border-round-3xl overflow-hidden" data-aos="flip-up" data-aos-delay="800">
+                                    <Image
+                                        src="/concert.png"
+                                        alt=""
+                                        width={500}
+                                        height={500}
+                                        className="w-full h-auto shadow-5"
+                                    />
+                                    <span className="text-dana-white text-xl font-semibold absolute top-50 left-50 translate-50">Concerts</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="py-7"></div>
+                    <div className="py-3 md:py-7"></div>
                 </div>
             </div>
 
             <div className="banner" data-aos="fade-up">
-                <div className="container">
+                <div className="container flex md:block flex-column justify-content-center">
                     <h2 className="font-italic font-light" data-aos="fade-right">
                         Je suis une <strong className="font-semibold">STRUCTURE</strong> culturelle
                     </h2>
@@ -176,15 +184,15 @@ export default function Home() {
             </div>
 
             <div className="container bg-dana-white py-2 mockup-container">
-                <div className="flex flex-row justify-content-center align-items-center gap-8 h-full">
-                    <div className="flex flex-1 flex-column">
+                <div className="flex flex-column md:flex-row justify-content-center align-items-center gap-3 md:gap-8 w-full h-auto md:h-full">
+                    <div className="flex w-6 md-w:12 flex-column w-full">
                         <h2 className="text-primary font-italic font-light" data-aos="fade-right">
                             Restons en <strong className="font-semibold">CONTACT</strong>
                         </h2>
                         <input type="email" placeholder="Votre e-mail" className="btn text-primary" data-aos="zoom-in" />
                         <a href="#" className="btn btn-secondary" data-aos="zoom-in"><span className="underline">J</span>e transmets</a>
                     </div>
-                    <div className="flex flex-1 h-full">
+                    <div className="flex w-5 md:w-12 h-full">
                         <Image
                             src="/mockup.png"
                             alt=""
@@ -200,8 +208,8 @@ export default function Home() {
             </div>
 
             <div className="footer container py-6">
-                <div className="flex flex-row justify-content-around gap-8">
-                    <div className="flex flex-1 flex-column gap-3">
+                <div className="flex flex-column md:flex-row justify-content-around gap-3 md:gap-8">
+                    <div className="flex flex-1 flex-column align-items-center md:align-items-start gap-3">
                         <Image
                             src="/dana.png"
                             alt="Dana"
@@ -211,14 +219,14 @@ export default function Home() {
                         />
                         <p className="text-primary text-lg">Découvrez la vie culturelle locale grâce à votre CSE d&apos;entreprise</p>
                     </div>
-                    <div className="flex flex-1 flex-column align-self-end gap-2">
+                    <div className="flex flex-1 flex-column align-self-start md:align-self-end gap-2">
                         <a href="#" className="text-primary">Offres</a>
                         <a href="#" className="text-primary">Fonctionnalités</a>
                         <a href="#" className="text-primary">Sorties</a>
                         <a href="#" className="text-primary">Pour les pros</a>
                         <a href="#" className="text-primary">Mentions légales</a>
                     </div>
-                    <div className="flex flex-1 justify-content-center align-self-end gap-5">
+                    <div className="flex flex-1 justify-content-center align-self-center md:align-self-end gap-5 mt-3 md:mt-0">
                         <Image
                             src="/twitter.png"
                             alt="Twitter"
