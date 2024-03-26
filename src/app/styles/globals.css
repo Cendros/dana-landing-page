@@ -61,12 +61,12 @@ html, body {
 }
 
 .banner {
-    background-color: var(--dana-purple);
+    background-color: #5B457F;
     color: var(--dana-white);
-    padding: 1rem 0;
+    padding: 2rem 1rem;
 
     @media screen and (min-width: 768px) {
-        padding: 3rem 0;
+        padding: 3rem 3rem;
     }
 }
 

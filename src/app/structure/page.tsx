@@ -4,7 +4,7 @@ import Aos from "aos";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-export default function Cse() {
+export default function Structure() {
     const checkboxMenu = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
@@ -44,7 +44,7 @@ export default function Cse() {
                 <div className="flex flex-column lg:flex-row justify-content-between gap-3">
                     <div className="flex flex-column gap-3 w-full lg:w-5">
                         <h1 className="text-primary font-light my-3" data-aos="fade-right">
-                            Offrez des moments de <strong className="font-semibold">découverte</strong> et d&apos;<strong className="font-semibold">évasion</strong> grâce à notre programme de partenariat avec les stuctures culturelles.
+                            Offrez des <strong className="font-semibold">expériences uniques</strong> à votre public grâce à notre plateforme.
                         </h1>
                         <div className="flex flex-row align-items-center gap-2 pb-3" data-aos="fade-right" data-aos-delay="100">
                             <Image
@@ -71,10 +71,9 @@ export default function Cse() {
                 <div id="offres" className="bg-dana-white big-border-top-left py-5 container" data-aos="fade-up" data-aos-delay="400">
                     <div className="pt-0 md:pt-8">
                         <h2 className="text-primary font-italic font-light">
-                            Offrez à vos employés<br />
-                            des moments culturels <strong className="font-semibold">INOUBLIABLES</strong>
+                            Je suis une <strong className="font-semibold">STRUCTURE</strong> culturelle
                         </h2>
-                        <p className="text-primary text-lg font-light m-0">Entreprise soucieuse du bien-être de vos salariés, vous pouvez collaborer avec nous pour offrir des billets d&apos;événements culturels via votre CSE. Enrichissez leur quotidien en leur permettant d&apos;accéder facilement à une variété d&apos;activités culturelles dans l&apos;agglomération de Caen la mer, en Normandie. Contactez-nous dès aujourd&apos;hui pour en savoir plus sur nos offres et rejoignez-nous dans notre mission pour rendre la culture accessible à tous !</p>
+                        <p className="text-primary text-lg font-light m-0">En tant que structure culturelle, vous pouvez maintenant proposer vos billets sur notre plateforme. Offrez des expériences uniques à un public diversifié, tout en bénéficiant de la visibilité auprès des employés des entreprises adhérentes. Rejoignez notre réseau dès aujourd&apos;hui et participez à rendre la culture plus accessible pour tous !</p>
                         <a href="#" className="btn btn-secondary"><span className="underline">C</span>ontactez-nous</a>
                     </div>
 

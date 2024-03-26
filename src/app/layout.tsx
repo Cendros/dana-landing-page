@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Poppins, Inter } from 'next/font/google';
-import { FaChevronUp } from "react-icons/fa";
 
 import "primeflex/primeflex.min.css";
 import "./styles/globals.css";
